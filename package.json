@@ -1,0 +1,40 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "imooc movie",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lijiaming",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "connect-mongo": "^1.3.2",
+    "connect-multiparty": "^2.0.0",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.2",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "jade": "^1.11.0",
+    "module_name": "^1.0.0",
+    "moment": "^2.18.1",
+    "mongoose": "^4.10.2",
+    "morgan": "^1.8.2",
+    "pug": "^2.0.0-rc.1",
+    "serve-static": "^1.12.3",
+    "server-static": "^2.0.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-nodemon": "^0.5.4",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nodemon": "^0.4.2"
+  },
+  "keywords": [
+    "123"
+  ]
+}
