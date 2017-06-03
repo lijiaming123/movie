@@ -32,7 +32,7 @@ var walk = function(path){ //遍历目录
 walk(models_path);
 
 mongoose.Promise = global.Promise;
-var dbUrl = 'mongodb://127.0.0.1:27017/i_movie2';
+var dbUrl = 'mongodb://127.0.0.1:27017/movie';
 mongoose.connect(dbUrl); // 连接mongodb本地数据库i_movie2
 /*  mongoose 简要知识点补充
 * mongoose模块构建在mongodb之上，提供了Schema[模式]、Model[模型]和Document[文档]对象，用起来更为方便。
