@@ -4,8 +4,8 @@
 var express = require('express');  // 加载express模块
 var port = process.env.PORT || 3000; //// 设置端口号：3000。环境变量要是设置了PORT，那么就用环境变量的PORT
 var app = express();  //启动Web服务器,将实例赋给变量app
-var mongoose = require('mongoose');
 var session = require('express-session'); //注意：要把session定义在mongoose前面
+var mongoose = require('mongoose');
 var cookieParser = require('cookie-parser'); //从cookie中获取sessionid
 var mongoStore = require('connect-mongo')(session); //session持久化，将session存在mongo中
 

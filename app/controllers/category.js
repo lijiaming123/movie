@@ -1,6 +1,5 @@
 var mongoose = require('mongoose')
 var Category = require('../models/category');
-var Movie = require('../models/movie');
 
 //admin new page
 exports.new = function(req,res){
