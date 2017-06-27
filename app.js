@@ -1,6 +1,4 @@
-/**
- * Created by Li hui on 17/04/19.跑通前后端
- */
+
 var express = require('express');  // 加载express模块
 var port = process.env.PORT || 3000; //// 设置端口号：3000。环境变量要是设置了PORT，那么就用环境变量的PORT
 var app = express();  //启动Web服务器,将实例赋给变量app
@@ -33,7 +31,7 @@ walk(models_path);
 
 mongoose.Promise = global.Promise;
 var dbUrl = 'mongodb://127.0.0.1:27017/movie';
-mongoose.connect(dbUrl); // 连接mongodb本地数据库i_movie2
+mongoose.connect(dbUrl); // 连接mongodb本地数据库movie
 /*  mongoose 简要知识点补充
 * mongoose模块构建在mongodb之上，提供了Schema[模式]、Model[模型]和Document[文档]对象，用起来更为方便。
 * Schema对象定义文档的结构（类似表结构），可以定义字段和类型、唯一性、索引和验证。
@@ -61,7 +59,7 @@ if('development' === app.get('env')){ //通过ENV拿到开发环境变量
 
 
 app.set('views', './app/views/pages'); // 设置默认的视图文件路径
-app.set('view engine', 'pug'); // 设置视图引擎：jade
+app.set('view engine', 'pug'); // 设置视图引擎：pug
 var bodyParser = require('body-parser')//不再与express捆绑需单独安装
 app.use(bodyParser.json()); //for parseing application json
 app.use(bodyParser.urlencoded({extended: true})); // 因为后台录入页有提交表单的步骤，故加载此模块方法（bodyParser模块来做文件解析），将表单里的数据进行格式化
@@ -74,4 +72,4 @@ app.listen(port);
 
 require('./config/routes')(app); //引用并传给app
 
-console.log('i_movie2 started on port: ' + port);
+console.log('movie started on port: ' + port);
